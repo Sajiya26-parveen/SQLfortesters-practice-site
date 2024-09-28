@@ -1,0 +1,8 @@
+select * frOM FAKE_CAR_DATA;
+show tables from database; 
+select * from products inner join cart
+on cart.productid=products.productid;
+select * from cart;
+select * from users;
+select users from database;
+insert into users values(3,12345,'sajiya@gmail.com','Sajiya','Par','Doon','22222','DOON','doonto','India','246813579');

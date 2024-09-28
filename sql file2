@@ -1,0 +1,148 @@
+select * from classes;
+select * from enrollments;
+select * from roles;
+select * from users;
+
+select u.firstName from users u join enrollments e on u.userid=e.userid join
+classes c on c.classCode=e.classcode join
+roles r on r.roleId=e.roleid
+where c.classname="Math" and r.roleType="Teacher";
+
+
+INSERT INTO classes
+VALUES
+(1,"Math"),
+(2,"Language"),
+(3,"Science"),
+(4, "Art");
+
+INSERT INTO roles
+VALUES
+(1, "Student"),
+(2, "Teacher"),
+(3, "Admin");
+
+INSERT INTO users
+VALUES
+(1, 'Rosemary', 'Enriquez', 'renriquez0', 'jQKS3frCf'),
+(2, 'Ellen', 'Abby', 'eabby1', 'GFt9cJwb'),
+(3, 'Enrichetta', 'Horstead', 'ehorstead2', 'LWCVgf'),
+(4, 'Randie', 'Hele', 'rhele3', '1gz9qEPI'),
+(5, 'Anabella', 'Mayers', 'amayers4', 'wXvz9oqRD5p'),
+(6, 'Corrina', 'Wildsmith', 'cwildsmith5', 'r6DFjAC'),
+(7, 'Shea', 'Popworth', 'spopworth6', 'Ji4l9Od3LY'),
+(8, 'Blondelle', 'Bredee', 'bbredee7', 'kmrQNtvB68l'),
+(9, 'Jeffrey', 'Revelle', 'jrevelle8', 'Injilzqi2kxZ'),
+(10, 'Madelaine', 'Aldwick', 'maldwick9', 'iCOWaF7Zsqnl');
+
+INSERT INTO enrollments
+VALUES
+(1,1,1),
+(1,1,3),
+(1,2,2),
+(2,1,4),
+(2,1,5),
+(2,2,2),
+(3,1,6),
+(3,1,7),
+(3,2,8);
+
+select * from users;
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (3, 'nowV55vm', 'areisenstein2@redcross.org', 'Armando', 'Reisenstein', '803 Raven Center', '1237', 'Forino', null, 'Macedonia', '674-280-4074');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (4, 'jFLMD2', 'amunkton3@biblegateway.com', 'Aeriell', 'Munkton', '375 Mesta Court', null, 'Qizhen', null, 'China', '724-974-8383');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (5, '6OMeF9', 'jdumphry4@histats.com', 'Jacinda', 'Dumphry', '8 Lien Way', null, 'Pryyutivka', null, 'Ukraine', '628-774-0431');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (6, 'PaLFXN', 'spaviour5@skyrock.com', 'Stinky', 'Paviour', '295 8th Parkway', null, 'Karangampel', null, 'Indonesia', '144-908-6394');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (7, 'MCdgp14jJz1', 'olackeye6@theguardian.com', 'Othella', 'Lackeye', '05 Main Point', null, 'Las Lomas', null, 'Panama', '180-120-9034');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (8, 'UcXC2y', 'bkornilov7@mysql.com', 'Bay', 'Kornilov', '9184 Sherman Lane', null, 'Xiaogang', null, 'China', '751-849-3209');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (9, '2ofNTJjNu4', 'pmartygin8@seesaa.net', 'Peria', 'Martygin', '98 Michigan Hill', '667 30', 'Forshaga', 'Värmland', 'Sweden', '995-612-3758');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (10, 'C1YcsBR9fzA', 'dgloster9@creativecommons.org', 'Drusie', 'Gloster', '468 Lyons Circle', '999-0436', 'Iwakura', null, 'Japan', '546-883-1871');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (11, 'niyEoFy', 'csplevinga@vinaora.com', 'Clarie', 'Spleving', '600 Coleman Road', '72089', 'San Antonio', 'Puebla', 'Mexico', '955-361-2271');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (12, 'adcVbdl88Zkc', 'mromayneb@hhs.gov', 'Malchy', 'Romayne', '4 Fairfield Plaza', null, 'Gudang', null, 'Indonesia', '870-376-7672');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (13, 'PNQxccW1FFte', 'vmacklamc@example.com', 'Valenka', 'Macklam', '9 Bartillon Road', null, 'Iţsā', null, 'Egypt', '938-767-6244');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (14, 'kZsboiwcf', 'sseargeantd@squarespace.com', 'Stearn', 'Seargeant', '378 Maple Wood Way', null, 'Sucre', null, 'Peru', '960-747-9167');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (15, 'zTQeq1x4WWJ', 'amcmeekane@vinaora.com', 'Alasdair', 'Mc Meekan', '15 Burrows Terrace', null, 'Mberubu', null, 'Nigeria', '716-535-7447');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (16, 'epfNBzbsQLd', 'imcarthurf@guardian.co.uk', 'Ingrid', 'McArthur', '50721 Clarendon Hill', '4935-804', 'Vila Fria', 'Viana do Castelo', 'Portugal', '549-530-4294');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (17, 'dei260c', 'nheathfieldg@timesonline.co.uk', 'Noni', 'Heathfield', '81847 Thierer Plaza', null, 'Níkaia', null, 'Greece', '655-314-5284');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (18, 'NK9ZntwBzMTL', 'dolyonovh@photobucket.com', 'Dean', 'Olyonov', '7026 Vahlen Point', '3156', 'Hernández', null, 'Argentina', '912-168-5484');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (19, 'OSZC7Y7V', 'dnavarijoi@bloglovin.com', 'Dona', 'Navarijo', '1116 Northridge Drive', null, 'Gaofeng', null, 'China', '557-849-1045');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (20, '9wdZsq', 'fdalesioj@digg.com', 'Finn', 'D''Alesio', '237 Claremont Park', '18560-000', 'Iperó', null, 'Brazil', '794-324-8577');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (21, '0jyTjH', 'ghrycekk@constantcontact.com', 'Guy', 'Hrycek', '4117 Blackbird Road', null, 'Pasarnangka', null, 'Indonesia', '730-146-7960');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (22, 'm3dwUg', 'pcuttsl@youtu.be', 'Patton', 'Cutts', '36 4th Avenue', null, 'Choibalsan', null, 'Mongolia', '524-750-1234');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (23, 'BhVRhJ3', 'mglavem@wordpress.org', 'Merci', 'Glave', '30491 Dixon Crossing', null, 'Tozkhurmato', null, 'Iraq', '609-249-6300');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (24, 'rcCX75wNB', 'cdarrachn@1688.com', 'Cordy', 'Darrach', '4 Mayfield Way', '8407', 'Manat', null, 'Philippines', '709-346-7791');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (25, 'Rz7QuEXg9', 'ewilliamo@smh.com.au', 'Elna', 'William', '12 Dennis Road', null, 'Jiulong', null, 'China', '762-446-9833');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (26, '9qsGX5T1jBR', 'qtwohigp@google.com', 'Quint', 'Twohig', '5 Eggendart Hill', null, 'Mbandaka', null, 'Democratic Republic of the Congo', '745-780-0381');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (27, 'T0iDG2KZweV5', 'mcausonq@loc.gov', 'Melony', 'Causon', '92938 Vermont Road', '2625', 'Guatimozín', null, 'Argentina', '362-143-8660');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (28, 'DXwnfLObmy', 'spawlaczykr@google.pl', 'Siana', 'Pawlaczyk', '9281 South Court', null, 'Lonya Chico', null, 'Peru', '747-588-2403');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (29, 'YSdtu9T6kQ', 'espilemans@nature.com', 'Eberto', 'Spileman', '95 Ridgeview Point', null, 'Qukuhu', null, 'China', '490-792-1417');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (30, 'IR7LSAY3', 'kspavinst@vistaprint.com', 'Kinny', 'Spavins', '0623 Carpenter Place', null, 'Sankoutang', null, 'China', '321-892-6237');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (31, 'GP2kUYWv', 'bobradaneu@sitemeter.com', 'Barnabas', 'O''Bradane', '29752 Golf Road', '828 94', 'Edsbyn', 'Gävleborg', 'Sweden', '171-646-4235');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (32, 'cG7RkLu4Rm', 'akapelhoffv@upenn.edu', 'Armando', 'Kapelhoff', '5813 Sullivan Point', '11320', 'Kandana', null, 'Sri Lanka', '982-465-4151');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (33, 'r9feeosa', 'jvenningw@i2i.jp', 'Jesselyn', 'Venning', '9673 Bayside Parkway', '8530', 'Panchagarh', null, 'Bangladesh', '651-859-3233');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (34, 'HAaMK0', 'nfoxleyx@1und1.de', 'Nixie', 'Foxley', '3 Maple Park', null, 'Panjiawan', null, 'China', '331-164-1436');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (35, '0tUukfeyg', 'jbreity@smugmug.com', 'Josee', 'Breit', '0984 Mayfield Junction', '0960', 'Louis Trichardt', null, 'South Africa', '687-332-0623');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (36, 'lsBMA18jiO7K', 'sbardnamz@gnu.org', 'Swen', 'Bardnam', '9972 Badeau Road', null, 'Xuebu', null, 'China', '244-122-9817');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (37, 'FJcB1JX', 'rguion10@vinaora.com', 'Rafa', 'Guion', '44 Iowa Circle', null, 'Huagai', null, 'China', '292-176-0114');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (38, 'H3V2UY8j', 'bbyers11@cisco.com', 'Bonnie', 'Byers', '018 Bobwhite Plaza', null, 'Sempol', null, 'Indonesia', '557-810-9258');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (39, 'ZgH74x5hpXQ', 'fchildren12@ow.ly', 'Faulkner', 'Children', '49 Buell Way', '93600-000', 'Estância Velha', null, 'Brazil', '493-799-2899');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (40, 'UfDjj6bMS', 'tvedmore13@fotki.com', 'Tierney', 'Vedmore', '1891 Redwing Court', null, 'Mzimba', null, 'Malawi', '844-809-4302');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (41, 'YTHIqIJW2DJ', 'cmaris14@newyorker.com', 'Catharine', 'Maris', '178 Heffernan Point', null, 'Mandiana', null, 'Guinea', '312-616-3160');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (42, 'DGDeRIV47lPj', 'aocahill15@comcast.net', 'Alister', 'O''Cahill', '7530 Dixon Court', null, 'Zhangjiawan', null, 'China', '821-252-7228');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (43, 'vpe3JMTHo7bl', 'ptrustrie16@biblegateway.com', 'Portia', 'Trustrie', '44 Schmedeman Drive', '618146', 'Osa', null, 'Russia', '558-530-0747');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (44, 'D9KVOLTLPd', 'ktaunton17@theatlantic.com', 'Kincaid', 'Taunton', '56077 Tennessee Street', null, 'Novoselë', null, 'Albania', '452-457-6285');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (45, 'mVVJEELmO5mJ', 'vhaselwood18@fastcompany.com', 'Vitia', 'Haselwood', '928 Weeping Birch Road', null, 'Nonsan', null, 'South Korea', '705-216-4494');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (46, 'n3aNqaL', 'adowden19@mit.edu', 'Alec', 'Dowden', '15030 Hudson Point', null, 'Pondokdalem', null, 'Indonesia', '992-152-0598');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (47, '5LEzCa0', 'mscoone1a@mail.ru', 'Matteo', 'Scoone', '7930 Steensland Road', '84-218', 'Łęczyce', null, 'Poland', '608-126-5556');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (48, 'FDir6KpXvRJ', 'bdeetlof1b@wikispaces.com', 'Bud', 'Deetlof', '17 Northfield Trail', null, 'Gonbad-e Kāvūs', null, 'Iran', '244-106-3493');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (49, '1zStdui', 'tblackwell1c@google.co.jp', 'Travis', 'Blackwell', '251 Del Mar Park', null, 'Gumuk Tengah', null, 'Indonesia', '191-206-5016');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (50, '99DDhXl', 'erawlings1d@slashdot.org', 'Erek', 'Rawlings', '15833 Summer Ridge Lane', null, 'Puputan', null, 'Indonesia', '104-315-3508');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (51, 'SEEtGB4dAh', 'ydongate1e@usnews.com', 'Yuri', 'Dongate', '3486 Cascade Pass', 'T8C', 'Millet', 'Alberta', 'Canada', '948-737-1355');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (52, 'RhbK3Km', 'rmogie1f@123-reg.co.uk', 'Rhianon', 'Mogie', '1 Riverside Park', null, 'Enshi', null, 'China', '716-658-3582');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (53, 'sM6E0rL', 'mcheales1g@hatena.ne.jp', 'Merry', 'Cheales', '7 Di Loreto Road', '7904', 'Mādārīpur', null, 'Bangladesh', '589-201-0281');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (54, 'tlB9811KjT', 'tciccerale1h@dailymail.co.uk', 'Thorn', 'Ciccerale', '9109 Oakridge Pass', null, 'Hương Sơn', null, 'Vietnam', '653-310-5524');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (55, 'bRVuAIfKIn', 'pbridewell1i@unblog.fr', 'Philbert', 'Bridewell', '1 Anniversary Crossing', null, 'Xaçmaz', null, 'Azerbaijan', '859-508-3751');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (56, 'fWkD0jle2D', 'gmusicka1j@cargocollective.com', 'Gregorius', 'Musicka', '1 Westridge Parkway', '66-220', 'Łagów', null, 'Poland', '821-610-1851');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (57, 'ugabDcOcykd', 'lgrimsley1k@craigslist.org', 'Logan', 'Grimsley', '1044 Raven Crossing', null, 'Sukorejo', null, 'Indonesia', '412-821-7767');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (58, 'ESbPKIRpisqW', 'rtight1l@hao123.com', 'Renault', 'Tight', '33 Victoria Street', null, 'Uuemõisa', null, 'Estonia', '493-565-4665');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (59, 'uZ0ZbW3WoQ', 'livatt1m@who.int', 'Laurent', 'Ivatt', '205 Towne Crossing', '48150', 'Khuan Don', null, 'Thailand', '165-302-4398');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (60, 'Z0A6Bf', 'nwillshere1n@jalbum.net', 'Natale', 'Willshere', '69 Colorado Hill', '57193', 'Sioux Falls', 'South Dakota', 'United States', '605-317-9626');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (61, 'dA8U9nnTHn', 'apinor1o@reddit.com', 'Artemas', 'Pinor', '49 Drewry Way', null, 'Muyudian', null, 'China', '712-827-4136');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (62, 'Hnus6higlG', 'lcoskerry1p@plala.or.jp', 'Lilian', 'Coskerry', '13806 Ludington Plaza', null, 'Pacora', null, 'Panama', '109-551-6336');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (63, 'dsYflU', 'wluetkemeyers1q@themeforest.net', 'Willie', 'Luetkemeyers', '70994 Sloan Pass', null, 'Youlongchuan', null, 'China', '149-337-1385');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (64, 'PzhpEaPRVj', 'egerraty1r@illinois.edu', 'Elvyn', 'Gerraty', '21366 Mcbride Park', '87395', 'Francisco I Madero', 'Tamaulipas', 'Mexico', '168-751-9252');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (65, 'JvF4ktEYNi4A', 'cofairy1s@google.pl', 'Culley', 'O''Fairy', '966 Northport Pass', '419 01', 'Bílina Kyselka', null, 'Czech Republic', '538-236-2938');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (66, 'HmadcjX', 'bpessel1t@mayoclinic.com', 'Brooke', 'Pessel', '28882 Logan Lane', null, 'Purong', null, 'China', '386-937-0881');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (67, 'n8CUiQb2gvZ', 'kharmstone1u@theglobeandmail.com', 'Koo', 'Harmstone', '302 Stone Corner Lane', '648581', 'Krasnaya Gorka', null, 'Russia', '263-821-2118');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (68, 'KCEWN4z', 'sstellino1v@blogspot.com', 'Sarajane', 'Stellino', '031 Bunker Hill Circle', '386340', 'Malgobek', null, 'Russia', '700-974-5570');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (69, 'aBqCvq', 'kschulze1w@youtu.be', 'Kerry', 'Schulze', '7696 Bellgrove Avenue', null, 'Dukuhpicung', null, 'Indonesia', '431-343-5735');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (70, 'ClgLLuH0C', 'lambrogi1x@ameblo.jp', 'Lorne', 'Ambrogi', '361 Declaration Center', null, 'Xinpu', null, 'China', '309-139-4479');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (71, '6G5GHahSus', 'pcammack1y@intel.com', 'Paulie', 'Cammack', '52 Lake View Court', null, 'Cahuac', null, 'Peru', '595-147-5410');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (72, '1fAzTJWNC', 'hricarde1z@washingtonpost.com', 'Hilary', 'Ricarde', '08 Kennedy Alley', null, 'Yunxiang', null, 'China', '274-332-6913');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (73, 'jZ8AsDZDq9k', 'mlymbourne20@state.gov', 'Melisent', 'Lymbourne', '5 Bluestem Center', '346930', 'Novoshakhtinsk', null, 'Russia', '536-857-0081');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (74, 'psZhiUziV', 'sgerrish21@squarespace.com', 'Sheilakathryn', 'Gerrish', '3841 Victoria Road', '057847', 'Apartadó', null, 'Colombia', '648-462-2999');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (75, 'OUoSpW4c', 'stoyer22@walmart.com', 'Sid', 'Toyer', '17 Reinke Parkway', null, 'Végueta', null, 'Peru', '685-517-5295');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (76, '9qpRw11', 'jdocker23@un.org', 'Jewel', 'Docker', '3 Ramsey Hill', '347320', 'Tsimlyansk', null, 'Russia', '560-607-1448');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (77, 'HWYotS3d', 'bcockhill24@acquirethisname.com', 'Bradly', 'Cockhill', '14 Monterey Drive', '26-680', 'Wierzbica', null, 'Poland', '239-336-2116');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (78, 'SqVjH2XH', 'mparell25@businesswire.com', 'Muire', 'Parell', '466 Bayside Circle', '83500-000', 'Almirante Tamandaré', null, 'Brazil', '613-628-2384');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (79, 'AfLfhql', 'mtreweek26@salon.com', 'Mela', 'Treweek', '88144 Grasskamp Alley', '38-323', 'Żurowa', null, 'Poland', '659-720-4597');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (80, 'E2Xea8riD5D', 'cruff27@discuz.net', 'Cody', 'Ruff', '260 Red Cloud Way', '34747 CEDEX', 'Vendargues', 'Languedoc-Roussillon', 'France', '695-933-7547');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (81, 'BaV2Fmng', 'ffazackerley28@behance.net', 'Fidelia', 'Fazackerley', '314 Hovde Plaza', null, 'Antsohihy', null, 'Madagascar', '476-299-6532');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (82, 'IzbTOt0q4z', 'hlongland29@google.es', 'Hoyt', 'Longland', '2679 Vahlen Pass', null, 'Rabak', null, 'Sudan', '607-707-7091');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (83, 'SSMAKcwNr', 'jauckland2a@4shared.com', 'Jozef', 'Auckland', '3728 David Terrace', '840-2105', 'Ōkawa', null, 'Japan', '187-649-4331');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (84, 'yRAyVUBmoDO', 'hgimbart2b@mashable.com', 'Hunfredo', 'Gimbart', '5423 Menomonie Park', null, 'Korsun’-Shevchenkivs’kyy', null, 'Ukraine', '144-804-2140');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (85, 'QXUP9viZU', 'llowy2c@yellowpages.com', 'Lucio', 'Lowy', '19 Monument Place', null, 'Liangchahe', null, 'China', '870-151-8977');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (86, '9UMSN1xbrs', 'scowley2d@ucoz.com', 'Selene', 'Cowley', '9012 Nevada Street', null, 'Moriki', null, 'Nigeria', '780-748-1047');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (87, 'k4SIafF1OIw', 'gflacknoe2e@miitbeian.gov.cn', 'Gray', 'Flacknoe', '8 Cottonwood Plaza', null, 'Kruhlaye', null, 'Belarus', '247-218-1584');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (88, 'Kj0eMUzx0Xl1', 'dowtram2f@time.com', 'Darrin', 'Owtram', '67730 Portage Terrace', null, 'Shijiazhai', null, 'China', '242-631-2048');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (89, 'vVfSWZuPk3p', 'dlomansey2g@people.com.cn', 'Dwight', 'Lomansey', '01 Moland Circle', null, 'Quyangqiao', null, 'China', '904-500-1360');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (90, 'csR4cYx', 'cferrario2h@woothemes.com', 'Chrystel', 'Ferrario', '36552 Kedzie Road', null, 'Renchaoxi', null, 'China', '979-376-4618');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (91, 'WxPybaFK7VI', 'nklimsch2i@hexun.com', 'Nikki', 'Klimsch', '48 Holy Cross Center', '36670', 'Mobile', 'Alabama', 'United States', '251-703-5743');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (92, 'i9utcH', 'unutman2j@oakley.com', 'Ulises', 'Nutman', '5 Vernon Way', '56250-000', 'Trindade', null, 'Brazil', '299-357-7425');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (93, 'ZE0iRs0AkT', 'arussel2k@reddit.com', 'Ariela', 'Russel', '812 Columbus Hill', null, 'Banjarsari', null, 'Indonesia', '392-112-5483');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (94, 'ewE1yy2zF', 'kizkoveski2l@woothemes.com', 'Kyrstin', 'Izkoveski', '15740 Texas Way', null, 'Nangakeo', null, 'Indonesia', '505-120-6863');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (95, 'uszSUHSn6aK', 'isherbrooke2m@freewebs.com', 'Ivory', 'Sherbrooke', '077 Tennyson Place', '38680-000', 'Arinos', null, 'Brazil', '274-383-0383');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (96, 'AoymMXB5K', 'amarkie2n@google.es', 'Andromache', 'Markie', '2144 Sunnyside Avenue', null, 'Naranjito', null, 'Ecuador', '353-563-5307');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (97, '0cYsN13Uqex8', 'vcolquitt2o@symantec.com', 'Vasili', 'Colquitt', '2 Derek Place', null, 'Juxing', null, 'China', '776-476-7506');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (98, 'TuIi5LUbM', 'agiberd2p@51.la', 'Abba', 'Giberd', '19570 Nancy Road', '59347-000', 'Ouro Branco', null, 'Brazil', '334-534-6063');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (99, 'dcCG6b8', 'patwood2q@live.com', 'Phillipp', 'Atwood', '51093 Mesta Plaza', '423371', 'Sarmanovo', null, 'Russia', '801-106-3972');
+insert into users (userId, password, email, firstName, lastName, address1, zipcode, city, state, country, phone) values (100, 'PFLgni', 'wstringer2r@webs.com', 'Worden', 'Stringer', '74794 Golf Plaza', null, 'Partenit', null, 'Ukraine', '809-474-9341');
